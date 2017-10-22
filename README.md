@@ -1,4 +1,10 @@
-# AngularApp
+# Photo Blog
+
+Screenshot
+
+![app_screenshot](photo_album.png)
+
+## Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
 
