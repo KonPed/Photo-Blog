@@ -1,0 +1,12 @@
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" [ngModel]="name">
+  </div>
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea class="form-control" name="comment" id="comment" cols="1" rows="8" placeholder="Enter your comment here..." [ngModel]="comment"></textarea>
+  </div>
+  {{comment}}
+  <button type="submit" class="btn btn-default btn-lg">Submit Comment</button>
+</form>
