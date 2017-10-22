@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppComponent } from './app.component';
-import { EntryListComponent } from './entries/entry-list/entry-list.component';
-import { EntryComponent } from './entries/entry/entry.component';
+import { EntryListComponent, EntryComponent, EntryService } from './entries';
+import { InMemoryEntryService } from './backend';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntryListComponent,
     EntryComponent,
+    EntryListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryEntryService)
   ],
-  providers: [],
+  providers: [EntryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

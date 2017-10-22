@@ -1,0 +1,44 @@
+.list {
+    list-style: none;
+}
+
+figure {
+    border: 1px solid #000000;
+    position: relative;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    max-width: 800px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+:host {
+    padding: 1em; 
+    display: block;
+}
+
+.actions {
+    padding: 1em 0;
+}
+
+.liked {
+    color: red;
+}
+
+.comments {
+    background-color: rgb(223, 216, 210);
+    padding: 15px;
+    color: rgb(34, 85, 56);
+}
+
+.comment {
+    padding: 8px;
+}

@@ -1,2 +1,1 @@
-<p>hello from entry-list.component.html</p>
-<app-entry></app-entry>
+<app-entry *ngFor="let entry of entries" [entry]="entry"></app-entry>
