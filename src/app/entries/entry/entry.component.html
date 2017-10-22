@@ -11,5 +11,5 @@
     <div *ngFor="let comment of entry.comments let i = index" class="comment">
         <p><strong>{{comment.name}}</strong>: {{comment.comment}} {{i + 1}}</p>
     </div>
-    <app-entry-comment-form></app-entry-comment-form>
+    <app-entry-comment-form [entryId]="entry.id" (addComment)="addComment($event)" ></app-entry-comment-form>
 </div>
