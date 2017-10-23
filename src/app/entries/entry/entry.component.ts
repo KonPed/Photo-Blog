@@ -15,7 +15,6 @@ export class EntryComponent implements OnInit {
   showComments = false;
 
   addComment(comment: {name: string; comment: string; }) {
-    // console.log('comment with name' + name + ' , ' + comment + ' pushed to array');
     this.entry.comments.push(comment);
   }
 
